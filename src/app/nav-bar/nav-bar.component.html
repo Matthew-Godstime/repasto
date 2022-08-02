@@ -1,0 +1,99 @@
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <button class="navbar-toggler fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand me-auto w ms-xxl-4" routerLink="/repasto"><img src="../../assets/images/logo.png"
+                alt=""></a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" style="width: 100vw;"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a data-bs-dismiss="offcanvas" class="nav-link hvr-underline-from-left" aria-current="page"
+                            routerLink="/repasto" routerLinkActive="active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-bs-dismiss="offcanvas" class="nav-link hvr-underline-from-left" routerLink="/about"
+                            routerLinkActive="active">About</a>
+                    </li>
+                    <li class="nav-item dp dropdown">
+                        <button class="" data-bs-toggle="dropdown" class="nav-link" type="button"
+                            routerLinkActive="active">Recipes
+                            <i class="fa fa-angle-down hvr-icon" aria-hidden="true"></i>
+                            <i class="fa fa-close hvr-icon" aria-hidden="true"></i>
+                        </button>
+                        <ul class="dpi dropdown-menu">
+                            <li><a data-bs-dismiss="offcanvas" class="dropdown-item hvr-underline-from-center" routerLink="/category/main-meal"
+                                    routerLinkActive="active">Main meal</a></li>
+                            <li><a data-bs-dismiss="offcanvas" class="dropdown-item hvr-underline-from-center" routerLink="/category/dessert"
+                                    routerLinkActive="active">Dessert</a></li>
+                            <li><a data-bs-dismiss="offcanvas" class="dropdown-item hvr-underline-from-center" routerLink="/category/cocktails"
+                                    routerLinkActive="active">Cocktails</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-lg-auto">
+                        <a data-bs-dismiss="offcanvas" class="nav-link hvr-underline-from-left" routerLink="/contact"
+                            routerLinkActive="active">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex flex-row me-lg-2">
+            <div class="px-2">
+                <button class="btn border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasTopFollow" aria-controls="offcanvasTop">Fellow</button>
+            </div>
+
+            <div class="px-2"><button class="search" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg></button></div>
+        </div>
+    </div>
+</nav>
+
+<!-- Follow Bar -->
+
+<div class="offcanvas follow-bar bg-white position-absolute offcanvas-top" data-bs-scroll="true"
+    data-bs-backdrop="false" tabindex="-1" id="offcanvasTopFollow" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-body">
+        <div class="d-flex justify-content-end flex-responsive">
+            <div class="mt-4" *ngFor="let follow of follows">
+                <ul>
+                    <li><a href="">{{follow}}</a></li>
+                </ul>
+            </div>
+            <button type="button" class="ms-5 btn-m" data-bs-dismiss="offcanvas" aria-label="Close">Close</button>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Search Bar -->
+<div style="background: #e8f1ef;" class="offcanvas offcanvas-top h-75" tabindex="-1" id="offcanvasTop"
+    aria-labelledby="offcanvasTopLabel">
+    <!-- <div class="offcanvas-header">
+    </div> -->
+    <div class="offcanvas-body">
+        <div class="form">
+            <input type="search" class="fs-1" name="search" id="search" placeholder="What are you looking for?"
+                [(ngModel)]="search" (keyup.enter)="check()">
+            <hr>
+
+            <div data-bs-dismiss="offcanvas" class="d-flex text-center flex-column mb-3 contain">
+
+            </div>
+        </div>
+    </div>
+    <div class="align-self-end"><button type="button" class="btn-close fs-2 search-close-btn"
+            data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
+</div>

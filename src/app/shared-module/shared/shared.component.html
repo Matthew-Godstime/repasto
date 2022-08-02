@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="row row-cols-md-2 row-cols-lg-3 row-cols-xxl-1">
+        <div class="col-sm-6 " *ngFor="let about of aboutList$ | async">
+            <div>
+                <span *ngIf="about.ctlAbout" class="ctl d-block pb-4">{{ about.ctlAbout }}</span>
+                <div class="about" *ngIf="about.details">
+                    {{ about.details}}
+                </div>
+
+                <div class="mb-4">
+                    <span *ngIf="about.ctl" class="ctl">{{ about.ctl }}</span>
+                </div>
+                <ul>
+                    <li class="ctl" *ngFor="let list of about.ctlList; index as i"><a href="">{{ list }}</a> <span
+                            class="float-end">{{i + 1}}</span></li>
+                </ul>
+
+                <div class="py-xxl-3">
+                    <img class="img-fluid" src="{{ about.src }}" alt="">
+                </div>
+                <div>
+                    <span *ngIf="about.ctlFollow" class="ctl d-block mb-4">{{ about.ctlFollow }}</span>
+                </div>
+                <ul *ngIf="about.ctlFollowList">
+                    <li class="ctl" *ngFor="let list2 of about.ctlFollowList"><a href="">{{ list2 }}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

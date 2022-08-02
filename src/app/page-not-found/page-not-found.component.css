@@ -1,0 +1,11 @@
+h1 {
+    font-size: 60px;
+}
+p {
+    padding: 2em;
+    font-family: initial;
+}
+div {
+    margin-bottom: 10%;
+    margin-left: 5%;
+}

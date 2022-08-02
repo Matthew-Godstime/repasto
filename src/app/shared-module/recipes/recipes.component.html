@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-xxl-6" *ngFor="let recipes of recipeList$ | async; index as i">
+            <section class="py-4" [style.border-bottom]="i < 4 ? '1px solid lightgray' : ''">
+                <div class="flex">
+                    
+                    <div class="content">
+                        <span *ngIf="recipes.ctl" class="ctl pe-3"><a href="">{{ recipes.ctl }}</a></span>
+                        <span *ngIf="recipes.date" class="date"><a href="">{{ recipes.date }}</a></span>
+                        <h3 *ngIf="recipes.header" class="pt-3"><a href="">{{ recipes.header }}</a></h3>
+                    </div>
+                    <div class="flex-img">
+                        <a [title]="recipes.header" class="img-link" [routerLink]="['/item-details', recipes.id]">
+                            <img *ngIf="recipes.src" width="150px" height="160px" src="{{ recipes.src }}" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+</div>

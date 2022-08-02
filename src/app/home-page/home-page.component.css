@@ -1,0 +1,79 @@
+@media screen and (max-width: 799.9px) {
+    .carousel-img {
+        width: 100% !important;
+    }
+
+    .carousel-cap {
+        display: none !important;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1224px) {
+    .cap {
+        position: absolute;
+        left: 2%;
+        top: 10% !important;
+        width: 100% !important;
+    }
+}
+
+
+.main-header {
+    background: #e8f1ef;
+    margin-bottom: 60px;
+}
+
+.intro {
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+}
+
+.intro div i {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.intro p {
+    max-width: 850px;
+    font-size: 3.75em;
+    line-height: 1.1;
+}
+
+.recipes {
+    opacity: .5;
+    margin-bottom: 3em;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.mtop {
+    margin-top: 11em;
+}
+
+.carousel {
+    position: relative;
+    background: #e8f1ef;
+}
+
+.cap {
+    position: absolute;
+    left: 2%;
+    top: 55%;
+    width: 100% !important;
+}
+
+.carousel-cap {
+    color: black;
+    width: 34% !important;
+}
+
+.carousel-img {
+    max-height: 80vh;
+    width: 60%;
+}
+
+.my {
+    margin: 6em 0;
+}

@@ -1,0 +1,70 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 ps-4 main-header animation-wrapper">
+            <header class="intro animate__animated animate__slideInLeft">
+                <div class="mb-5">
+                    <i>Hey! I'm Alice Caruso,</i>
+                </div>
+                <p>an award-winning chef that loves writing about food. Welcome to my collection of recipes!</p>
+            </header>
+        </div>
+        <div class="col-sm-12 col-xxl-9 px-5">
+            <app-card></app-card>
+        </div>
+        <div class="col-12 col-xxl-3 border-left">
+            <article class="mtopmobile">
+                <app-shared></app-shared>
+            </article>
+        </div>
+    </div>
+    <div class="row mtop px-lg-4">
+        <span class="recipes">OUR NEWEST DESSERT RECIPES</span>
+        <div>
+            <app-recipes></app-recipes>
+        </div>
+
+        <div class="col-sm-12">
+            <div id="carouselExampleSlidesOnly" class="carousel slide my carousel-fade" data-bs-ride="carousel">
+                <span class="pt-4 ps-4 d-block">HIDDEN GEMS</span>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{{ carousel.data1.src }}" class="d-block float-end carousel-img" alt="...">
+                        <div class="cap">
+                            <div class="carousel-cap px-2 d-none d-md-block">
+                                <h3><a href="">{{ carousel.data1.header }}</a></h3>
+                                <hr>
+                                <span class="ctl me-3"><a href="">{{ carousel.data1.ctl }}</a></span>
+                                <span class="date"><a href="">{{ carousel.data1.date}}</a></span>
+                                <p>{{ carousel.data1.details}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{carousel.data2.src}}" class="d-block float-end carousel-img" alt="...">
+                        <div class="cap">
+                            <div class="carousel-cap px-2 d-none d-md-block">
+                                <h3><a href=""> {{ carousel.data2.header }} </a></h3>
+                                <hr>
+                                <span class="ctl me-3"><a href=""> {{ carousel.data2.ctl }} </a></span>
+                                <span class="date"><a href=""> {{carousel.data2.date}} </a></span>
+                                <p> {{carousel.data2.details }} </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{ carousel.data3.src }}" class="d-block float-end carousel-img" alt="...">
+                        <div class="cap">
+                            <div class="carousel-cap px-2 d-none d-md-block">
+                                <h3><a href=""> {{carousel.data3.header }} </a></h3>
+                                <hr>
+                                <span class="ctl me-3"><a href=""> {{carousel.data3.ctl}} </a></span>
+                                <span class="date"><a href=""> {{carousel.data3.date}} </a></span>
+                                <p> {{ carousel.data3.details }} <em>pavilion</em> {{ carousel.data3.details2}} </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

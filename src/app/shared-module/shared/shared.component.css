@@ -1,0 +1,9 @@
+    li {
+        padding: 1.5% 0;
+        font-weight: normal;
+    }
+
+    ol,
+    ul {
+        margin-left: -11%
+    }

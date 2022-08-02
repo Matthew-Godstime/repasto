@@ -1,0 +1,202 @@
+<div class="container-fluid">
+    <div class="row" *ngIf="item$ | async as item">
+        <div class="col-12">
+            <div class="d-flex flex-wrap justify-content-center mt-5">
+                <div class="col-md-6 pt-4 animate__animated animate__rotateInDownLeft">
+                    <div class="log text-center mb-3">
+                        <span class="ctl pe-3"><a routerLink="/category/dessert">{{item.ctl}}</a></span>
+                        <span class="date"><a routerLink="/category/dessert">{{item.date}}</a></span>
+                    </div>
+                    <header>
+                        <h1 class="h1">{{ item.header }}</h1>
+                    </header>
+                    <div class="b">
+                        <span class="bw"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ITEM DATA ENTRIES -->
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-12 col-xxl-8 d-flex justify-content-center flex-wrap"
+                    [class]="item.id == 3 || item.id == 9 || item.id == 11 ? 'col-xxl-12': ''">
+                    <div [class]="item.id == 1 ? 'col-9': 'col-12 col-xxl-9'"
+                        class="animate__animated animate__slideInUp">
+                        <div *ngIf="item.src" class="d-flex mb justify-content-center flex-wrap">
+                            <img class="img-fluid" src="{{item.src}}" alt="">
+                        </div>
+                        <div *ngIf="item.data">
+                            <!-- First Paragraph -->
+                            <div *ngIf="item.data.firstP && item.id != 15">
+                                <p>{{ item.data.firstP }}</p>
+                            </div>
+                            <!-- Header -->
+                            <div *ngIf="item.data.header" class="intro"
+                                [class]="item.id == 1 || item.id == 15 ? 'fs' : 
+                            item.id == 6 ? '' : item.id == 9 ||item.id == 11 ? 'ul-para' : item.id == 2 || 4 || 5 || 7 ? 'fs2' : ''">
+                                <h1> {{item.data.header}} </h1>
+                            </div>
+                            <!-- Border -->
+                            <div *ngIf="item.id == 1" class="b my-0">
+                                <span class="bw w-25"></span>
+                            </div>
+                            <!-- Sub header -->
+                            <div *ngIf="item.data.subHeader" class="subheader"
+                                [class]="item.id == 11 ? 'b4-ul-dl' : ''">
+                                <p> {{item.data.subHeader}} </p>
+                            </div>
+                            <!-- Border -->
+                            <div *ngIf="item.id == 1" class="b">
+                                <span class="bw w-100"></span>
+                            </div>
+                            <!-- Block Quote -->
+                            <div *ngIf="item.id !== 8 && item.id !== 11" class="blockQ blockw">
+                                <blockquote><span *ngIf="item.id == 1" id="blockQ-slash"></span>{{item.data.block}}
+                                </blockquote>
+                            </div>
+                            <!-- Paragraph -->
+                            <div *ngIf="item.data.para && item.id != 15" class="para"
+                                [class]="item.id == 3 || item.id == 9 ? 'ul-para' : ''">
+                                <p> {{item.data.para}} </p>
+                            </div>
+                            <!-- Item 15 Layout -->
+                            <div *ngIf="item.id == 15">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="col-12">
+                                            <div class="fs text-center">
+                                                <h1>{{item.data.para}}</h1>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <p>{{ item.data.firstP }}</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="text-center">
+                                            <img class="img-fluid" src="{{item.data.src}}" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Image After Header -->
+                            <div *ngIf="item.id == 12" class="text-center">
+                                <img class="img-fluid" src="{{item.data.src}}" alt="">
+                            </div>
+                            <!-- Entry List -->
+                            <div *ngIf="item.data.entries" class="datalist">
+                                <div *ngFor="let data of item.data.entries index as i">
+                                    <!-- Description List -->
+                                    <dl>
+                                        <dt *ngIf="item.data.entries[i].dt"> <span class="num">{{i + 1}}.</span>
+                                            {{data.dt}}
+                                        </dt>
+                                        <dd *ngIf="item.data.entries[i].dd"> {{data.dd}} </dd>
+                                        <div *ngIf="item.data.entries[i].odd">
+                                            <p>{{ data.odd }}</p>
+                                        </div>
+                                    </dl>
+                                    <!-- Image After Description List -->
+                                    <div *ngIf="item.id == 6 && i == 3">
+                                        <div>
+                                            <img class="img-fluid d-block mx-auto" src="{{item.data.src}}" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- Footer -->
+                                    <div *ngIf="item.data.entries[i].footer">
+                                        <p><i>{{ data.footer }}</i></p>
+                                    </div>
+                                    <!-- Link -->
+                                    <div *ngIf="item.data.entries[i].link">
+                                        <span class="date"><a class="d-inline" routerLink="">{{ data.link }}</a></span>
+                                    </div>
+                                    <!-- UnOrdered List -->
+                                    <div
+                                        [classList]="item.id == 3 ? 'ul-bg' : (item.id == 5 || item.id == 13) && i == 0? 'ul-bg-id-5': item.id == 9 ? 'ul-bg-id-9' : item.id == 10 || item.id ==14 ? 'ul-bg-id-10':''">
+                                        <div class="list-title fs-2 fw-semibold pb-4" *ngIf="item.data.entries[i].ul">
+                                            {{data.ul}}
+                                        </div>
+                                        <div class="list" *ngIf="item.data.entries[i].li">
+                                            <ul *ngFor="let list of item.data.entries[i].li; index as num">
+                                                <li><span class="pe-3 user-select-none"
+                                                        [class]="item.id == 9 ? 'circle' : ''"
+                                                        *ngIf="item.id != 7 && item.id != 3 && item.id !== 10 && item.id != 14">{{num+1}}
+                                                        .</span>{{ list }}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Second Entry Description List -->
+                            <div class="entriesb4Ul" *ngIf="item.data.entriesb4Ul">
+                                <div *ngIf="item.id == 10 || item.id == 13">
+                                    <div class="src col-sm-12 mx-auto">
+                                        <img class="img-fluid d-block pt-5" src="{{item.data.src}}" alt="">
+                                    </div>
+                                </div>
+
+                                <div *ngFor="let data of item.data.entriesb4Ul index as i">
+                                    <!-- Border -->
+                                    <div *ngIf="item.id == 8 || item.id == 11 && i == 1" class="b my-0 pt-5">
+                                        <span class="bw w-100"></span>
+                                    </div>
+                                    <!-- Block Quote -->
+                                    <div *ngIf="i == 1" class="blockQ blockw">
+                                        <blockquote><span *ngIf="item.id == 1 || item.id == 8 || item.id == 11"
+                                                id="blockQ-slash"></span>{{item.data.block}}
+                                        </blockquote>
+                                    </div>
+
+                                    <!-- Entries 2 Description -->
+                                    <div [classList]="item.id == 3 || item.id == 11 ? 'b4-ul-dl': ''">
+                                        <dl>
+                                            <dt *ngIf="item.data.entriesb4Ul[i].dt">{{data.dt}} </dt>
+                                            <dd *ngIf="item.data.entriesb4Ul[i].dd"> {{data.dd}} </dd>
+                                        </dl>
+
+                                    </div>
+                                    <!-- Entries 2 Images -->
+                                    <div *ngIf="item.id !== 10 && i == 0 && item.id !== 12 && item.id !== 13">
+                                        <div [classList]="item.id == 3 || item.id == 11 ? 'src col-sm-10 mx-auto': ''">
+                                            <img class="img-fluid" src="{{item.data.src}}" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- IFrame -->
+                                    <div *ngIf="i == item.data.entriesb4Ul.length -2 && item.id == 8">
+                                        <iframe title="vimeo-player"
+                                            src="https://player.vimeo.com/video/95342512?h=2dd2807567\" width="100%"
+                                            height="360" frameborder="0" allowfullscreen>
+                                        </iframe>
+                                        <div class="text-center pt-3">
+                                            <span class="ctl opacity-100"><a href="https://vimeo.com/95342512">FOOD </a>
+                                                from <a href="https://vimeo.com/siqisong">SIQI SONG </a>on <a
+                                                    href="https://vimeo.com/">Vimeo.</a></span>
+                                        </div>
+                                    </div>
+                                    <!-- Footer -->
+                                    <div *ngIf="item.data.entriesb4Ul[i].footer"
+                                        [classList]="item.id == 11 ? 'b4-ul-dl': ''">
+                                        <p><i>{{ data.footer }}</i></p>
+                                    </div>
+                                    <!-- Entries 2 Link -->
+                                    <div *ngIf="item.data.entriesb4Ul[i].link"
+                                        [classList]="item.id == 11 ? 'b4-ul-dl': ''">
+                                        <a routerLink="">{{ data.link }}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-xxl-4 border-left w border-left"
+                    *ngIf="item.id !== 3 && item.id !== 9 && item.id != 11">
+                    <div class="mtopmobile">
+                        <app-shared></app-shared>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

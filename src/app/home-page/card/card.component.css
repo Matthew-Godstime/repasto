@@ -1,0 +1,35 @@
+@media screen and (max-width: 768px) {
+    .about {
+        font-size: 40px !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .cen {
+        text-align: center;
+        padding: .5em 0;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .mt {
+        margin-top: -30% !important;
+    }
+
+    .mt2 {
+        margin-top: -10% !important;
+    }
+}
+
+.small-img {
+    width: 210px !important;
+}
+
+.img-link,
+h3 a {
+    transition: opacity .4s ease-out;
+}
+
+
+h3 {
+    font-weight: lighter;
+}

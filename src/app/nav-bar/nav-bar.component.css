@@ -1,0 +1,116 @@
+@media screen and (min-width: 991.99px) {
+    .w {margin-right: 11% !important;}
+    .dp:hover>.dpi {
+        display: block;
+        width: fit-content;
+        box-shadow: 0px 3px 2px 0px;
+    }
+}
+@media screen and (max-width: 991.99px) {
+    .nav-link { font-size: 30px; padding: .5em 0;}
+}
+@media screen and (max-width: 1200px) {
+    .follow-bar {
+        height: 100vh !important;
+        background-color: #e8f1ef !important;
+        text-align: center;
+    }
+    .btn-m {
+        margin-left: auto !important;
+    }
+    .flex-responsive {
+        justify-content: start !important;
+        flex-wrap: wrap;
+    }
+    .flex-responsive div ul {
+        margin-top: 45vh !important;
+        font-size: larger;
+    }
+}
+@media screen and (max-width: 500px) {
+    .flex-responsive div ul {
+        margin: 0 !important;
+        font-size: larger;
+    }
+    .btn-m {
+        margin: 70vh auto !important;
+    }
+        ::placeholder {
+            font-size: 20px;
+        }
+}
+.offcanvas,
+.dpi, .dpi li a:hover {
+    background-color: #e8f1ef;
+}
+.navbar-nav {
+    margin: auto 7%;
+}
+.dpi li {
+    padding: .5em !important;
+}
+.dpi {
+    height: auto !important;
+    width: fit-content;
+    font-size: larger;
+}
+.navbar,
+.follow-bar {
+    height: 90px;
+}
+.nav-item {
+    padding: 0.1em 0;
+}
+ul {
+    font-family: Crimson Text;
+    font-weight: 400;
+    font-size: 15px;
+}
+.navbar-brand::marker {
+    content: none;
+}
+ul li {
+    line-height: 1;
+}
+a:hover,
+button {
+    opacity: 1;
+}
+.dp:hover button>.fa-angle-down {
+    display: none;
+}
+.fa-close {
+    display: none;
+}
+.dp:hover button>.fa-close {
+    display: inline;
+}
+.active {
+    border-bottom: 1px solid #000000 !important;
+    background-color: inherit;
+}
+.search {
+    border: none;
+    background-color: transparent;
+}
+.form {
+    width: 80%;
+    margin: auto;
+}
+input {
+    width: 100%;
+}
+button, input {
+    outline: none !important;
+    border: none !important;
+    background-color: transparent;
+}
+
+::placeholder,
+ul li a,
+button {
+    color: #000000;
+}
+.btn-m {
+    margin: auto 5%;
+}
