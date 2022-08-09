@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="row row-cols-md-2 row-cols-lg-3 row-cols-xxl-1">
-        <div class="col-sm-6 " *ngFor="let about of aboutList$ | async">
+        <div class="col-sm-6 " *ngFor="let about of aboutList$ | async; index as i">
             <div>
                 <span *ngIf="about.ctlAbout" class="ctl d-block pb-4">{{ about.ctlAbout }}</span>
                 <div class="about" *ngIf="about.details">
@@ -15,8 +15,8 @@
                             class="float-end">{{i + 1}}</span></li>
                 </ul>
 
-                <div class="py-xxl-3">
-                    <img class="img-fluid" src="{{ about.src }}" alt="">
+                <div *ngIf="i == 2" class="py-xxl-3">
+                    <img class="img-fluid" src="{{ about.src }}" alt="home-about-image" loading="lazy">
                 </div>
                 <div>
                     <span *ngIf="about.ctlFollow" class="ctl d-block mb-4">{{ about.ctlFollow }}</span>

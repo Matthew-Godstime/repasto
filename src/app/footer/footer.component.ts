@@ -23,11 +23,14 @@ import { Component, OnInit } from '@angular/core';
 
                     <div class="col-sm-12">
                         <div class="mt-5 mb-0">
-                            <a class="img-link me-5" href=""><img class="img-fluid" src="../../assets/images/logo.png" alt=""></a>
+                            <a class="img-link me-5" href=""><img class="img-fluid" src="../../assets/logo.png" alt="logo"></a>
                             <span class="ctl"><a href="">PROUDLY POWERED BY WORDPRESS | THEME: REPASTO BY THEMES KINGDOM.</a></span>
                         </div>
                     </div>
                 </footer>
+                <div class="bg-success">
+                        <p class="text-center">&copy; Matthew God'stime 2022. </p>
+                    </div>
             </div>
         </div>
 
@@ -39,10 +42,9 @@ import { Component, OnInit } from '@angular/core';
 }
 
 input {
-    /* border-radius: 0; */
     width: 30vw;
     border: none;
-    outline: 1px solid lightgray;
+    outline: 1px solid lightgrey;
 }
 
 .btn {
@@ -62,29 +64,13 @@ input {
         display: block !important;
         width: 95vw !important;
         margin: 0 auto !important;
-        /* overflow: hidden !important; */
     }
     button {
         display: block !important;
         width: 95vw !important;
         margin: 0 auto !important;
-        /* overflow: hidden !important; */
     }
 }
-/* @media screen and (max-width: 767px) {
-    input {
-        display: block !important;
-        width: 100vw !important;
-        margin: 0 auto !important;
-        overflow: hidden !important;
-    }
-    button {
-        display: block !important;
-        width: 100vw !important;
-        margin: 0 auto !important;
-        overflow: hidden !important;
-    }
-} */
 `
   ]
 })

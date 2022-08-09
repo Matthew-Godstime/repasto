@@ -53,7 +53,7 @@ export class DataBase {
             },
             { dt: 'Step 2.', dd: 'Add the chicken to the mayonnaise mixture. Drop the chicken into the plastic bag, seal, and shake until each piece is evenly coated. Place the pieces on the prepared rack. Spray the chicken pieces evenly with cooking spray.' },
             { dt: 'Step 3.', dd: 'Bake until the coating browns.' }, { link: 'Tags: Featured, Main' }],
-            src: '../assets/images/post15.jpg'
+            src: 'https://obbefule.sirv.com/repasto/post15.jpg'
         },
         {
             header: 'Breakfast is the first meal of the day, and many believe that it is the most essential.',
@@ -63,7 +63,7 @@ export class DataBase {
             { dd: '“In general, kids and teens who eat breakfast have more energy, do better in school. Without breakfast, people (especially young ones) can get irritable and tired. So, I would suggest you make time for breakfast — for you and your kids!” – Stephen Dowson, MD' },
             { footer: 'Bonus knowledge: It was not until the 15th century that the word “breakfast” came into use in written English to describe a morning meal, which literally means to break the fasting period of the previous night; in Old English, the term was morgenmete meaning “morning meal.”' },
             { link: 'Tags: Nutrition' }],
-            src: '../assets/images/postn28.jpg'
+            src: 'https://obbefule.sirv.com/repasto/postn28.jpg'
         },
         {
             header: 'Need some sweet goodness to get over a persistent cold? Try pumpkin soup!',
@@ -85,7 +85,7 @@ export class DataBase {
             { dt: 'I understand exactly how you are feeling 一 opening a restaurant pushes you to think in another direction, and always to have numbers on your mind. And it’s frightening. I assume you had help.', dd: 'Alina: Yes, I have a whole team of financial advisers that have my back. I don’t know what I would do without them! (laugh) I also spoke to a number of chefs that opened their restaurants.', odd: 'Actually, remember when I reached out to you and asked about your food and beverage suppliers? Was it like 7-8 months ago? At that time, I was only thinking about opening a restaurant, and I wanted to check whether I am in over my head or not. (laugh)' },
             { dt: 'Yeah, I do remember. I also remember that you didn’t mention anything about a restaurant opening, but I got pretty suspicious. To me, you’ve always seemed like the girl that will take over LA with her fantastic cooking aesthetic and modernist techniques. Trust me, you have what it takes to open a restaurant.', dd: 'Alina: Aw, thank you. Your support means a lot.' },
             { dt: 'Can we go back to your roots for a moment? How did you make a career out of cooking food? Where did you learn how to think and work like a chef?', dd: '', footer: 'If you want to find out more about Alina and check out the rest of the interview, be sure to visit Alina Zee’s youtube channel.', link: 'Tags: History' }],
-            src: '../assets/images/postn16.jpg'
+            src: 'https://obbefule.sirv.com/repasto/postn16.jpg'
         },
         {
             header: 'Looking for a snack that’s savory, fluffy and delicious? You are in the right place.',
@@ -108,7 +108,7 @@ export class DataBase {
             { link: 'Tags: Snack' }
             ],
             block: 'A granola bar is often carried by people who enjoy outdoor activities, such as hikers or campers because it is nutritious, high in calories, and easy to store.',
-            src: '../assets/images/post20.1.jpg'
+            src: 'https://obbefule.sirv.com/repasto/post20.1.jpg'
         },
         {
             header: 'There’s no shame in admitting that, once in a while, when you get home, you feel exhausted. At that moment, the last thing you want to do is spend another two hours of your day making dinner.',
@@ -128,7 +128,7 @@ export class DataBase {
                 ul: 'Ingredients:', li: ['1 cup fresh blueberries', '1 lime, cut into wedges', '20 to 24 fresh mint leaves', '4 ounces ginger simple syrup',
                     '5 ounces club soda', '4 ounces vodka'],
             }],
-            src: '../assets/images/joanna-kosinska-71802.jpg',
+            src: 'https://obbefule.sirv.com/repasto/joanna-kosinska-71802.jpg',
             entriesb4Ul: [{ dt: 'Step 1.', dd: 'Peel and grate the ginger and add it, together with the sugar and cold water, to a saucepan. Bring the ginger and sugar to the boil and stir until the sugar dissolves. Cover and let steep for 15 minutes. Strain and cool in the refrigerator when done.' },
                 { dt: 'Step 2.', dd: 'Add the blueberries, lime wedges, and mint leaves to the glass. Muddle with a wooden spoon, so the blueberries are broken. If assembling pitchers, cover them at this stage and leave in the refrigerator until ready to serve.' },
                 { dt: 'Step 3.', dd: 'When ready to serve, add the ginger syrup, a bit of vodka, and top off with club soda. Stir quickly and pour into glasses with ice cubes. If you want, you can garnish the cocktail with fresh blueberries and a sprig of mint.' },
@@ -149,7 +149,7 @@ export class DataBase {
                     link: 'Tags: Drink'
                 },
             ],
-            src: '../assets/images/postn17.jpg',
+            src: 'https://obbefule.sirv.com/repasto/postn17.jpg',
             block: 'By writing this guidebook, Berti wanted to help you, a common, busy man, to change a strategy in which you shop. The author wanted to help you avoid aisles that contain processed products.',
         },
         {
@@ -164,7 +164,7 @@ export class DataBase {
             header: 'Beautiful macarons are one of the current ‘sweet’ crazes. They make a wonderful gift or just a delicious snack!',
             subHeader: 'A macaroon is a type of small circular cake, made from ground almonds, coconut, and/or other nuts or even potato. Macarons are often baked on edible rice paper placed on a baking tray.',
             entries: [{ ul: 'Ingredients:', li: ['3 egg whites', '1/4 cup white sugar', '1 2/3 cups confectioners’ sugar', '1 cup finely ground almonds'] }],
-            src: '../assets/images/joanna-kosinska-288950.jpg',
+            src: 'https://obbefule.sirv.com/repasto/joanna-kosinska-288950.jpg',
             entriesb4Ul: [{ dt: 'Step 1.', dd: 'Beat egg whites in the bowl until whites are foamy. Then, beat in white sugar and continue beating until egg whites are glossy and fluffy. Sift sugar and ground almonds in a separate bowl and quickly fold the almond mixture into the egg whites.' },
                 {
                     dt: 'Step 2. ', dd: 'Pipe the batter onto the baking sheet in rounds, leaving space between the disks. Let the piped cookies stand out at room temperature until they form a hard skin on top, about 1 hour. Bake cookies until set but not browned, about 10 minutes, and be sure to let cookies cool completely before filling.',
@@ -187,7 +187,7 @@ export class DataBase {
             subHeader: 'What makes the apple pie so popular is its pastry, which is generously used top-and-bottom, making it a double-crust pie (except for the deep-dish apple pie, that has a top crust only). On occasion, an apple pie is served with whipped cream or ice cream on top.',
             para: 'Apple pie was brought to the colonies by the British during the 17th and 18th centuries.',
             firstP: 'Nowadays, American recipes for apple pie usually indicate there is an apple filling spiced with cinnamon, nutmeg, and preferably lemon juice.',
-            src: '../assets/images/post16.1.jpg',
+            src: 'https://obbefule.sirv.com/repasto/post16.1.jpg',
 
 
         }

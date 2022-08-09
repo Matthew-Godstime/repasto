@@ -6,9 +6,9 @@
                     <div class="d-flex flex-wrap">
                         <div [style.backgroundColor]="item.id == 1 ? '#e8f1ef': ''">
                             <div *ngIf="item.src" class="cen">
-                                <a [title]="item.header" class="img-link" [routerLink]="['/item-details', item.id]"><img
+                                <a [title]="item.header" class="img-link" [routerLink]="['/item-details', item.id]"><img loading="lazy"
                                         [classList]="item.id != 1 ? 'small-img float-sm-start me-sm-4' : 'img-fluid'" src="{{ item.src }}"
-                                        alt=""></a>
+                                        alt="{{ item.header }} image"></a>
                             </div>
                             <div class="mx-4 cen" [class]="item.id == 1 ? 'py-4' : ''">
                                 <span *ngIf="item.ctl" class="ctl me-3"><a [routerLink]="['/item-details', item.id]">{{ item.ctl

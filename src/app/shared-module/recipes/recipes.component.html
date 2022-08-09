@@ -11,7 +11,7 @@
                     </div>
                     <div class="flex-img">
                         <a [title]="recipes.header" class="img-link" [routerLink]="['/item-details', recipes.id]">
-                            <img *ngIf="recipes.src" width="150px" height="160px" src="{{ recipes.src }}" alt="">
+                            <img *ngIf="recipes.src" loading="lazy" width="150px" height="160px" src="{{ recipes.src }}" alt="{{ recipes.header }} image">
                         </a>
                     </div>
                 </div>
