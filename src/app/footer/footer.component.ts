@@ -29,7 +29,7 @@ import { Component, OnInit } from '@angular/core';
                     </div>
                 </footer>
                 <div class="bg-success">
-                        <p class="text-center">&copy; Matthew God'stime 2022. </p>
+                        <p class="text-center">&copy; G.Tech Team 2022. </p>
                     </div>
             </div>
         </div>
