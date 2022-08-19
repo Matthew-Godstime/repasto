@@ -4,7 +4,7 @@
             <div class="animate__animated animate__zoomIn">
                 <div [classList]="item.id! > 3 && odd ? item.id == 8 ? 'mt2':'mt' : ''">
                     <div class="d-flex flex-wrap">
-                        <div [style.backgroundColor]="item.id == 1 ? '#e8f1ef': ''">
+                        <div [style.backgroundColor]="item.id == 1 ? '#e8f1ef': ''" [classList]="item.id == 1 ? 'mx-auto': ''">
                             <div *ngIf="item.src" class="cen">
                                 <a [title]="item.header" class="img-link" [routerLink]="['/item-details', item.id]"><img loading="lazy"
                                         [classList]="item.id != 1 ? 'small-img float-sm-start me-sm-4' : 'img-fluid'" src="{{ item.src }}"

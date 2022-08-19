@@ -9,6 +9,12 @@
 @media screen and (max-width: 991.99px) {
     .nav-link { font-size: 30px; padding: .5em 0;}
 }
+@media screen and (max-width: 991.9px) {
+        .nav-toggler {
+                display: block !important;
+            }
+}
+
 @media screen and (max-width: 1200px) {
     .follow-bar {
         height: 100vh !important;
@@ -38,6 +44,9 @@
         ::placeholder {
             font-size: 20px;
         }
+}
+.nav-toggler {
+    display: none;
 }
 .offcanvas,
 .dpi, .dpi li a:hover {
